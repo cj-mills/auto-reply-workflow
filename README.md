@@ -62,6 +62,24 @@ jobs:
 
 
 
+## Permissions
+
+To use this action in your repository, you need to enable the "Read and write permissions" option for the Actions feature. This can be done in your repository settings. Follow these steps:
+
+1. Go to the main page of your GitHub repository.
+2. Click on the "Settings" tab.
+3. In the left sidebar, click on "Actions".
+4. Under "General" section, locate the "Workflow permissions" heading.
+5. Select the "Read and write permissions" option.
+
+After enabling the required permissions, you can proceed with creating and configuring the workflow as described in the "Usage" section.
+
+Make sure to enable the "Read and write permissions" for each repository you want to add this workflow to.
+
+
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
