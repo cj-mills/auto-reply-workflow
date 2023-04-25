@@ -2,6 +2,8 @@
 
 This GitHub action automatically posts a custom comment on new issues created in your repository. By default, it will post a message thanking the user for creating the issue and indicating that the issues are typically addressed on Thursdays.
 
+
+
 ## Usage
 
 To use this action in your repository, create a new workflow in your `.github/workflows` directory, for example: `auto_reply.yml`.
@@ -25,12 +27,25 @@ jobs:
 
 
 
-You can also customize the `issue-comment` input to set your desired auto-reply message.
+## Permissions
+
+To use this action in your repository, you need to enable the "Read and write permissions" option for the Actions feature. This can be done in your repository settings. Follow these steps:
+
+1. Go to the main page of your GitHub repository.
+2. Click on the "Settings" tab.
+3. In the left sidebar, click on "Actions".
+4. Under "General" section, locate the "Workflow permissions" heading.
+5. Select the "Read and write permissions" option.
+
+After enabling the required permissions, you can proceed with creating and configuring the workflow as described in the "Usage" section.
+
+Make sure to enable the "Read and write permissions" for each repository you want to add this workflow to.
 
 
 
 ## Inputs
 
+You can also customize the `issue-comment` input to set your desired auto-reply message.
 ### `issue-comment` (required)
 
 The comment to post on the new issue. The default message is:
@@ -60,21 +75,6 @@ jobs:
          issue-comment: "Thank you for your issue! Our team will review it and get back to you shortly."
 ```
 
-
-
-## Permissions
-
-To use this action in your repository, you need to enable the "Read and write permissions" option for the Actions feature. This can be done in your repository settings. Follow these steps:
-
-1. Go to the main page of your GitHub repository.
-2. Click on the "Settings" tab.
-3. In the left sidebar, click on "Actions".
-4. Under "General" section, locate the "Workflow permissions" heading.
-5. Select the "Read and write permissions" option.
-
-After enabling the required permissions, you can proceed with creating and configuring the workflow as described in the "Usage" section.
-
-Make sure to enable the "Read and write permissions" for each repository you want to add this workflow to.
 
 
 
